@@ -27,13 +27,13 @@ export function Header() {
           </div>
 
           <div className="flex items-center space-x-3">
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" onClick={() => console.log('Notifications clicked')}>
               <Bell className="w-4 h-4" />
             </Button>
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" onClick={() => console.log('Settings clicked')}>
               <Settings className="w-4 h-4" />
             </Button>
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" onClick={() => console.log('Profile clicked')}>
               <User className="w-4 h-4" />
             </Button>
           </div>

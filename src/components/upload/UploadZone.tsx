@@ -54,11 +54,11 @@ export function UploadZone({ onFilesDrop, className }: UploadZoneProps) {
         </div>
 
         <div className="flex items-center justify-center space-x-4">
-          <Button variant="outline" className="space-x-2">
+          <Button variant="outline" className="space-x-2" onClick={() => console.log('Select Images clicked')}>
             <FileImage className="w-4 h-4" />
             <span>Select Images</span>
           </Button>
-          <Button variant="outline" className="space-x-2">
+          <Button variant="outline" className="space-x-2" onClick={() => console.log('Select Folder clicked')}>
             <Folder className="w-4 h-4" />
             <span>Select Folder</span>
           </Button>

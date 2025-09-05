@@ -50,6 +50,7 @@ export function Sidebar() {
               "w-full justify-start",
               collapsed && "px-2"
             )}
+            onClick={() => console.log(`Navigating to ${item.label}`)}
           >
             <item.icon className="w-4 h-4" />
             {!collapsed && (

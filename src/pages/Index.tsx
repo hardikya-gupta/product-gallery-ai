@@ -108,11 +108,11 @@ const Index = () => {
                 <CardHeader className="flex flex-row items-center justify-between space-y-0">
                   <CardTitle>Recent Uploads</CardTitle>
                   <div className="flex items-center space-x-2">
-                    <Button variant="outline" size="sm">
+                    <Button variant="outline" size="sm" onClick={() => console.log('Filter clicked')}>
                       <Filter className="w-4 h-4 mr-2" />
                       Filter
                     </Button>
-                    <Button variant="outline" size="sm">
+                    <Button variant="outline" size="sm" onClick={() => console.log('More options clicked')}>
                       <MoreHorizontal className="w-4 h-4" />
                     </Button>
                   </div>
@@ -140,7 +140,7 @@ const Index = () => {
                           {upload.status === "review" && (
                             <AlertCircle className="w-5 h-5 text-destructive" />
                           )}
-                          <Button variant="ghost" size="sm">View</Button>
+                          <Button variant="ghost" size="sm" onClick={() => console.log(`Viewing ${upload.name}`)}>View</Button>
                         </div>
                       </div>
                     ))}
@@ -162,15 +162,15 @@ const Index = () => {
                   <CardTitle>Quick Actions</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
-                  <Button className="w-full justify-start">
+                  <Button className="w-full justify-start" onClick={() => console.log('View Analytics clicked')}>
                     <TrendingUp className="w-4 h-4 mr-2" />
                     View Analytics
                   </Button>
-                  <Button variant="outline" className="w-full justify-start">
+                  <Button variant="outline" className="w-full justify-start" onClick={() => console.log('Export Reports clicked')}>
                     <Download className="w-4 h-4 mr-2" />
                     Export Reports
                   </Button>
-                  <Button variant="outline" className="w-full justify-start">
+                  <Button variant="outline" className="w-full justify-start" onClick={() => console.log('Manage Collections clicked')}>
                     <FolderOpen className="w-4 h-4 mr-2" />
                     Manage Collections
                   </Button>
